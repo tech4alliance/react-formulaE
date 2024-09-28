@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+.resultados-formula-e {
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.resultados-formula-e h1 {
+  color: #0033cc;
+  font-size: 24px;
+  margin: 0;
+}
+
+.container-abas {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao-aba {
+  background-color: transparent;
+  color: #0e233a;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.botao-aba:hover {
+  background-color: #e6e6e6;
+}
+
+.botao-aba.ativo {
+  background-color: #0033cc;
+  color: white;
+}
+
+.conteudo-aba {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.lista-resultados {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item-resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f8f9fa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s;
+}
+
+.item-resultado:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.icone-corrida {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.nome-corrida {
+  font-weight: bold;
+  color: #0033cc;
+}
+
+.nome-vencedor {
+  color: #001e3c;
+}
+
+.nome-equipe {
+  color: #555;
+}
+
+.tabela-classificacao {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+}
+
+.tabela-classificacao th, .tabela-classificacao td {
+  padding: 15px;
+  text-align: left;
+}
+
+.tabela-classificacao th {
+  background-color: #0e233a;
+  color: white;
+  font-weight: bold;
+}
+
+.tabela-classificacao tr {
+  background-color: #f8f9fa;
+  transition: all 0.3s;
+}
+
+.tabela-classificacao tr:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.avatar-piloto {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.grafico-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .container-abas {
+    flex-direction: column;
+  }
+
+  .botao-aba {
+    margin: 5px 0;
+  }
+
+  .item-resultado {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .item-resultado span {
+    margin-bottom: 5px;
+  }
+}

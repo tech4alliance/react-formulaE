@@ -1,0 +1,76 @@
+.calendar-wrapper {
+    max-width: 800px;
+    margin: 40px auto 60px; 
+    font-family: Arial, sans-serif;
+}
+  
+  .calendar-header {
+    background-color: #1c3353;
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .calendar-header h2 {
+    text-align: center;
+    margin: 0;      
+    font-size: 24px;
+  }
+  
+  .month-names {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .month-names h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .calendar-body {
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .months-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .month-events {
+    flex: 1;
+  }
+  
+  .event {
+    margin-bottom: 10px;
+  }
+  
+  .event-date {
+    font-weight: bold;
+  }
+  
+  .calendar-footer {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-all-button {
+    background-color: #1c3353;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-all-button:hover {
+    background-color: #2c4a7c;
+  } 

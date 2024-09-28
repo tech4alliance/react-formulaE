@@ -1,0 +1,96 @@
+.promo-container {
+    display: flex;
+    background: linear-gradient(90deg, #001027 0%, #001027 50%, rgba(0, 16, 39, 0.00) 100%);
+    color: white;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    height: 300px; /* Definindo uma altura fixa para o container */
+  }
+  
+  .promo-content {
+    flex: 1;
+    padding: 20px;
+    z-index: 2;
+    max-width: 60%; /* Limitando a largura do conteúdo */
+    margin-left: 10%; /* Movendo o conteúdo mais para a direita */
+  }
+  
+  .promo-title {
+    font-size: 32px; /* Reduzindo um pouco o tamanho da fonte */
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+  
+  .promo-description {
+    font-size: 11px; /* Reduzindo um pouco o tamanho da fonte */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    max-width: 90%; /* Ajustando a largura máxima do texto */
+  }
+  
+  .promo-button {
+    background-color: white;
+    color: #001027;
+    border: none;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 140px;
+    text-transform: uppercase;
+  }
+  
+  .arrow {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  
+  .promo-image {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: auto; /* Alterando para auto para manter a proporção */
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .promo-image img {
+    height: 100%;
+    width: auto; /* Alterando para auto para manter a proporção */
+    object-fit: cover;
+    object-position: center right; /* Ajustando a posição da imagem */
+  }
+  
+  @media (max-width: 768px) {
+    .promo-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .promo-content {
+      padding: 20px;
+      max-width: 100%;
+      margin-left: 0;
+    }
+  
+    .promo-image {
+      position: relative;
+      width: 100%;
+      height: 200px;
+    }
+  
+    .promo-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }

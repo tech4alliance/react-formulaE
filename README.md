@@ -1,5 +1,7 @@
 # Tech Alliance - Formula E Website
 
+
+
 <img src="/src/public/img/Screenshot_1.png">
 
 ## Overview

@@ -11,6 +11,7 @@ import Login from './components/Login';
 import Equipes from './components/Equipes';
 import './css/styles.css';
 import Footer from './components/Footer';
+import Dados from './components/Dados';
 
 const App = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -40,6 +41,7 @@ const App = () => {
                     <Route path="/login" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
                     <Route path="/news" element={<News />} />
                     <Route path="/equipes" element={<Equipes />} />
+                    <Route path="/dados" element={<Dados />} />
                 </Routes>
             </div>
         </Router>

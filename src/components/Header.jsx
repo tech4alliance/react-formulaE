@@ -19,6 +19,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
                         <li><Link to="/news">NOTÍCIAS</Link></li>
                         <li><Link to="https://www.fiaformulae.com/en/teams/fa97d2e7-02ca-4983-a930-4fdaa245a852/mahindra-racing">CORRIDAS</Link></li>
                         <li><Link to="/equipes">RESULTADOS E CLASSIFICAÇÃO</Link></li>
+                        <li><Link to="/dados">DADOS DAS CORRIDAS</Link></li>
                     </ul>
                 </nav>
             </div>
